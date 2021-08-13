@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:gravity="end"
         android:paddingHorizontal="10dp"
-        android:text="@string/equation"
         android:textColor="@color/white"
+        android:maxLength="20"
         android:textSize="20sp" />
 
     <LinearLayout
@@ -36,6 +36,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/c"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -49,6 +50,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/plus_minus"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -62,6 +64,7 @@
             android:textSize="15sp" />
 
         <Button
+            android:id="@+id/percentage"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -75,6 +78,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/divide"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -96,6 +100,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/seven"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -109,6 +114,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/eight"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -122,6 +128,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/nine"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -135,6 +142,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/multiply"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -156,6 +164,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/four"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -169,6 +178,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/five"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -182,6 +192,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/six"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -195,6 +206,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/minus"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -215,6 +227,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/one"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -228,6 +241,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/two"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -241,6 +255,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/three"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -254,6 +269,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/plus"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -275,6 +291,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/zero"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -288,6 +305,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/dot"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -300,6 +318,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/cancel"
             style="buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
