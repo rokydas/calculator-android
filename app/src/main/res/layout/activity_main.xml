@@ -3,16 +3,300 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:gravity="center_horizontal"
     android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/result"
+        android:text="@string/result"
+        android:gravity="end"
+        android:paddingTop="20dp"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="AC"
-        android:padding="10dp"
-        android:textSize="30sp"
-        android:background="@drawable/shadow"/>
+        android:textSize="60sp"/>
+
+    <TextView
+        android:id="@+id/equation"
+        android:text="@string/equation"
+        android:gravity="end"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+    
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/c"
+            android:textColor="@color/gray"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/plus_minus"
+            android:textColor="@color/gray"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:text="@string/percentage"
+            android:textColor="@color/gray"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/divide"
+            android:textColor="@color/gray"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/seven"
+            android:textColor="@color/white"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/eight"
+            android:textColor="@color/white"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/nine"
+            android:textColor="@color/white"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/multiplication"
+            android:textColor="@color/gray"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/four"
+            android:textColor="@color/white"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/five"
+            android:textColor="@color/white"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/six"
+            android:textColor="@color/white"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/minus"
+            android:textColor="@color/gray"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="45sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/one"
+            android:textColor="@color/white"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/two"
+            android:textColor="@color/white"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/three"
+            android:textColor="@color/white"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/plus"
+            android:textColor="@color/gray"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/zero"
+            android:textColor="@color/white"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/dot"
+            android:textColor="@color/white"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:text="@string/cancel"
+            android:textColor="@color/gray"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:text="@string/equal"
+            android:textColor="@color/gray"
+            android:background="@drawable/shadow"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
 
 </LinearLayout>
